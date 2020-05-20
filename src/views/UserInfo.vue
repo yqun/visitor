@@ -29,6 +29,7 @@
                 placeholder="请选择出生年月"
                 title="生　日">
       </datetime>
+      <!--<input type="file">-->
     </group>
     <div class="footer">
       <x-button class="blue" @click.native="$router.push('/login')">更改认证手机号</x-button>

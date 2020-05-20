@@ -5,6 +5,7 @@ import FastClick from 'fastclick'
 import router from '@/router/index'
 import store from '@/store/store'
 import App from './App'
+import utils from './utils/utils'
 
 import '@/components/comment'
 import '@/assets/js/flexible'
@@ -27,10 +28,10 @@ import 'vx-easyui/dist/themes/vue.css';
 import EasyUI from 'vx-easyui';
 Vue.use(EasyUI);
 
-FastClick.attach(document.body)
+FastClick.attach(document.body);
 
-Vue.config.productionTip = false
-
+Vue.config.productionTip = false;
+Vue.prototype.utils = utils;
 /* eslint-disable no-new */
 new Vue({
   router,
